@@ -1,0 +1,21 @@
+{
+  "name": "fn-demo",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "maxcloud-functions",
+    "dev": "tsc && maxcloud-functions"
+  },
+  "dependencies": {
+    "@max-cloud/functions": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
