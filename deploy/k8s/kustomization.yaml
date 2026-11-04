@@ -3,7 +3,10 @@
 # manifests here too.
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-resources: []
+resources:
+- functions.yaml
 # The deploy workflow replaces app with the image it built, pinned by digest.
 images:
-  - name: app
+- digest: sha256:2dd7d61dd23dd5e87917a2d65775afd360c43f16ebb2882c9934ed78aa233828
+  name: app
+  newName: ghcr.io/maxemiliang/fn-demo
