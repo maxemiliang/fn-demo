@@ -7,6 +7,6 @@ resources:
 - functions.yaml
 # The deploy workflow replaces app with the image it built, pinned by digest.
 images:
-- digest: sha256:2dd7d61dd23dd5e87917a2d65775afd360c43f16ebb2882c9934ed78aa233828
+- digest: sha256:a5a759f6281be855ab864996f13a5f5084148710a993d1a997664a3d6715649f
   name: app
   newName: ghcr.io/maxemiliang/fn-demo
