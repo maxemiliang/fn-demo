@@ -4,5 +4,5 @@ import { onRequest } from "@max-cloud/functions";
 // service: private (cluster-local) until you pass { public: true }, and
 // scaled to zero when idle. See onSchedule and onQueue for the other kinds.
 export const hello = onRequest({ public: true }, async (req) => {
-  return new Response(`Hello from ${new URL(req.url).pathname}\n`);
+  return new Response(`Hello from ${new URL(req.url).pathname}, deployed with mcloud deploy\n`);
 });
