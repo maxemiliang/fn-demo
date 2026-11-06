@@ -12,7 +12,7 @@
     "dev": "tsc && maxcloud-functions"
   },
   "dependencies": {
-    "@max-cloud/functions": "^0.1.0"
+    "@max-cloud/functions": "^0.4.0"
   },
   "devDependencies": {
     "@types/node": "^24.19.2",
