@@ -7,6 +7,6 @@ resources:
 - functions.yaml
 # The deploy workflow replaces app with the image it built, pinned by digest.
 images:
-- digest: sha256:a0434d64e0d1aa237fe031f2331c12caa795f81a06f245629f3b92711a0db517
+- digest: sha256:e8a8760bc51ef68a03d61e3ec12837375ff75eb39ab1d48d6b86f6edcf9db592
   name: app
-  newName: ghcr.io/maxemiliang/fn-demo
+  newName: registry.gronblom.dev/fn-demo/fn-demo

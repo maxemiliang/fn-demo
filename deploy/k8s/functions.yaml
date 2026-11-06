@@ -24,6 +24,19 @@ spec:
       - env:
         - name: FUNCTION_TARGET
           value: hello
+        - name: DATABASE_URL
+          valueFrom:
+            secretKeyRef:
+              key: uri
+              name: db-app
+              optional: true
+        envFrom:
+        - secretRef:
+            name: maxcloud-s3
+            optional: true
+        - secretRef:
+            name: app-secrets
+            optional: true
         image: app
         ports:
         - containerPort: 8080
