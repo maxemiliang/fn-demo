@@ -7,6 +7,6 @@ resources:
 - functions.yaml
 # The deploy workflow replaces app with the image it built, pinned by digest.
 images:
-- digest: sha256:e8a8760bc51ef68a03d61e3ec12837375ff75eb39ab1d48d6b86f6edcf9db592
+- digest: sha256:294cb1110cdeed794689f7e2bf12fc7c3d558cb10a3e8cd6cc01b2aeec95be1d
   name: app
   newName: registry.gronblom.dev/fn-demo/fn-demo

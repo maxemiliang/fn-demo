@@ -24,6 +24,8 @@ spec:
       - env:
         - name: FUNCTION_TARGET
           value: hello
+        - name: MAXCLOUD_APP
+          value: fn-demo
         - name: DATABASE_URL
           valueFrom:
             secretKeyRef:
